@@ -1,0 +1,35 @@
+@font-face { font-family: ehsmb; src: url(Barlock.ttf); }
+
+body > #weapons.frame {
+    top: 0px;
+    right: 330px;
+    width: 100px;
+}
+
+body > #weapons.frame > div#weaponsframe {
+    margin: 3px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    text-align: right;
+    color: black;
+}
+
+body > #weapons.frame > div#weaponsframe > div#weaponsimg {
+    flex: 1;
+    height: 70px;
+    background-image: url("../icons/armed.png");
+    background-size: 80%;
+    background-repeat: NO-REPEAT;
+    background-position: center;
+}
+
+body > #weapons.frame  > div#weaponsframe > div#weaponsammo {
+    width: 35px;
+    text-align: center;
+    font-family: ehsmb;
+    font-size: 40px;
+}

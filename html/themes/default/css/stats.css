@@ -1,0 +1,67 @@
+@font-face { font-family: wwDigital; src: url(wwDigital.ttf); }
+
+body > #stats.frame {
+    font-family: wwDigital;
+    top: 0px; right: 0px; width: 20%;
+}
+
+body > #stats.frame > div.stat {
+    height: 50px;
+    background-color: gray;
+    margin: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+
+body > #stats.frame > div.stat div.icon {
+    height: 40px;
+    width: 40px;
+    margin: 3px 0 3px 3px;
+    border: 1px solid black;
+    background-size: 80%;
+    background-repeat: NO-REPEAT;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    width: 40px;
+    margin: 3px 0 3px 3px;
+    border: 1px solid black;
+}
+
+body > #stats.frame > div.stat div.framedesc { margin: 0 3px; flex: 1; }
+
+body > #stats.frame > div.stat div.desc {
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    height: 21px;
+    margin-bottom: 2px;
+    width: 100%;  
+}
+
+body > #stats.frame > div.stat div.framebar,
+body > #stats.frame > div.stat div.bar {
+    height: 20px; width: 100%;
+    background-color: rgba(0, 0, 0);
+}
+
+body > #stats.frame > div.stat div#healthicon {
+    background-image: url("../icons/health.png");
+}
+body > #stats.frame > div.stat div#thirsticon {
+    background-image: url("../icons/thirst.png");
+}
+body > #stats.frame > div.stat div#hungericon {
+    background-image: url("../icons/hunger.png");
+}
+body > #stats.frame > div.stat div#shieldicon {
+    background-image: url("../icons/shield.png");
+}
+body > #stats.frame > div.stat div#staminaicon {
+    background-image: url("../icons/stamina.png");
+}
+body > #stats.frame > div.stat div#oxygenicon {
+    background-image: url("../icons/oxygen.png");
+}

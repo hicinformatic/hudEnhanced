@@ -1,0 +1,7 @@
+
+body > #map.frame {
+    bottom: 0px;
+    left: 0px;
+    width: 10%;
+    height: 15%;
+}
