@@ -55,7 +55,7 @@ var setCoord = function(frame, x, y){
         el.appendChild(coord);
         frames_backup[frame].coord = coord;
     }
-    frames_backup[frame].coord.innerText = "x-("+x+") y|("+y+")";
+    frames_backup[frame].coord.innerText = "x:"+x+" y:"+y;
 }
 
 var showData = function(frame){
@@ -124,7 +124,6 @@ function dragElement(id, offsetheight=0, offsetwidth=0) {
             offsetY = document.body.offsetHeight+offsetheight - el.offsetHeight;
         }
         el.style.top = offsetY + "px";
-        setCoord(el.id, "y", offsetY);
 
         // left/right constraint
         if (el.offsetLeft < minX) {
@@ -133,7 +132,7 @@ function dragElement(id, offsetheight=0, offsetwidth=0) {
             offsetX = document.body.offsetWidth+offsetwidth - el.offsetWidth;
         }
         el.style.left = offsetX + "px";
-        setCoord(el.id, "x", offsetX);
+        setCoord(el.id, offsetX, offsetY);
     }
 
     function closeDragElement() {

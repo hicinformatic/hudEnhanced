@@ -18,24 +18,34 @@ body, #hud-enhanced { height: 100vh; width: 100%; }
     cursor: grab;
 }
 #hud-enhanced > .frame > .data-name {
+    color: white;
+    padding: 2px;
     display: None;
     position: absolute;
     right: 0;
+    bottom: 0;
     padding-right: 3px;
+    background-color: rgb(0, 0, 0, 0.8);
 }
 #hud-enhanced > .frame:hover > .data-name { display: block; }
 #hud-enhanced.debug > .frame > .data-name {
     display: block;
-    color: rgb(219, 24, 24);
+    padding: 5px;
+    border-top-left-radius: 5px;
+    font-size: small;
 }
 
 #hud-enhanced > .frame > .dataxy {
+    font-size: small;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 5px;
     display: none;
     position: absolute;
     left: 0;
+    border-bottom-right-radius: 5px;
 }
 #hud-enhanced > .frame:hover > .dataxy { display: block; }
 #hud-enhanced.debug > .frame > .dataxy {
     display: block;
-    color: rgb(219, 24, 24)!important;
 }
