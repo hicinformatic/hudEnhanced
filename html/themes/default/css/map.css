@@ -1,7 +1,7 @@
-
-body > #map.frame {
+#hud-enhanced > #map.frame {
     bottom: 0px;
     left: 0px;
     width: 10%;
     height: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
 }

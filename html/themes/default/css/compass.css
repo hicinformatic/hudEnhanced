@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700');
 
-body > #compass.frame {
+#hud-enhanced > #compass.frame {
     top: 0px;
     left: 0px;
     font: 17px 'Raleway Light', sans-serif;
@@ -9,7 +9,7 @@ body > #compass.frame {
 }
 
 
-body > #compass.frame > #compassframe {
+#hud-enhanced > #compass.frame > #compassframe {
   width: 260px;
   height: 260px;
   position: relative;
@@ -18,7 +18,7 @@ body > #compass.frame > #compassframe {
   box-shadow: 0 2px 6px .8px #999;
 }
 
-body > #compass.frame > #compassframe #compassmain {
+#hud-enhanced > #compass.frame > #compassframe #compassmain {
   width: 94%;
   height: 94%;
   position: absolute;
@@ -28,7 +28,7 @@ body > #compass.frame > #compassframe #compassmain {
   border-radius: 50%;
 }
 
-body > #compass.frame > #compassframe #compassrose {
+#hud-enhanced > #compass.frame > #compassframe #compassrose {
   width: 70%;
   height: 70%;
   position: absolute;
@@ -36,45 +36,45 @@ body > #compass.frame > #compassframe #compassrose {
   margin-top: -35%; margin-left: -35%;
 }
 
-body > #compass.frame > #compassframe .pointer {
+#hud-enhanced > #compass.frame > #compassframe .pointer {
   width: 0; height: 0;
   position: absolute;
   border: 80px solid;
   border-left: 14px solid; border-right: 14px solid;
 }
 
-body > #compass.frame > #compassframe #compasscardial .pointer {
+#hud-enhanced > #compass.frame > #compassframe #compasscardial .pointer {
   border-color: #DDD transparent transparent transparent;
 }
 
-body > #compass.frame > #compassframe #compassordinal .pointer {
+#hud-enhanced > #compass.frame > #compassframe #compassordinal .pointer {
   border-color: #AAA transparent transparent transparent;
 }
 
-body > #compass.frame > #compassframe .pointernorth {
+#hud-enhanced > #compass.frame > #compassframe .pointernorth {
   top: -40px; margin-top: -40px;
   left: 50%; margin-left: -14px;
   -webkit-transform: rotate(180deg);
 }
 
-body > #compass.frame > #compassframe .pointereast {
+#hud-enhanced > #compass.frame > #compassframe .pointereast {
   top: 28%; right: -10px; 
   margin-top: -40px;
   -webkit-transform: rotate(-90deg);
 }
 
-body > #compass.frame > #compassframe .pointerwest {
+#hud-enhanced > #compass.frame > #compassframe .pointerwest {
   top: 28%; left: -10px; 
   margin-top: -40px;
   -webkit-transform: rotate(90deg);
 }
 
-body > #compass.frame > #compassframe .pointersouth {
+#hud-enhanced > #compass.frame > #compassframe .pointersouth {
   bottom: -40px; margin-bottom: -40px;
   left: 50%; margin-left: -14px;
 }
 
-body > #compass.frame > #compassframe #compasscenter {
+#hud-enhanced > #compass.frame > #compassframe #compasscenter {
   width: 16px;
   height: 16px;
   position: absolute;
@@ -86,7 +86,7 @@ body > #compass.frame > #compassframe #compasscenter {
   border-radius: 50%;
 }
 
-body > #compass.frame > #compassframe #compassneedle {
+#hud-enhanced > #compass.frame > #compassframe #compassneedle {
   width: 12px;
   height: 12px;
   position: absolute;
@@ -96,7 +96,7 @@ body > #compass.frame > #compassframe #compassneedle {
   -webkit-animation: animation-dip-needle 1s linear 0s infinite;
 }
 
-body > #compass.frame > #compassframe #compassneedle:after {
+#hud-enhanced > #compass.frame > #compassframe #compassneedle:after {
   content: "";
   width: 0; height: 0;
   position: absolute;
@@ -108,7 +108,7 @@ body > #compass.frame > #compassframe #compassneedle:after {
   z-index: -10000;
 }
 
-body > #compass.frame > #compassframe #compassneedle:before {
+#hud-enhanced > #compass.frame > #compassframe #compassneedle:before {
   content: "";
   display: block;
   width: 0; height: 0;
@@ -120,22 +120,22 @@ body > #compass.frame > #compassframe #compassneedle:before {
   -webkit-transform: rotate(40deg);
 }
 
-body > #compass.frame > #compassframe #compasslabelnorth {
+#hud-enhanced > #compass.frame > #compassframe #compasslabelnorth {
   position: absolute;
   top: 10px; left: 116px;
 }
 
-body > #compass.frame > #compassframe #compasslabeleast {
+#hud-enhanced > #compass.frame > #compassframe #compasslabeleast {
   position: absolute;
   top: 114px; right: 12px;
 }
 
-body > #compass.frame > #compassframe #compasslabelwest {
+#hud-enhanced > #compass.frame > #compassframe #compasslabelwest {
   position: absolute;
   top: 114px; left: 12px;
 }
 
-body > #compass.frame > #compassframe #compasslabelsouth {
+#hud-enhanced > #compass.frame > #compassframe #compasslabelsouth {
   position: absolute;
   bottom: 6px; left: 116px;
 }

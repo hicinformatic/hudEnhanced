@@ -1,17 +1,41 @@
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { height: 100vh; width: 100%; }
-body > .frame { 
+html, body, #hud-enhanced  { margin: 0; padding: 0; }
+body, #hud-enhanced { height: 100vh; width: 100%; }
+#hud-enhanced > .frame { 
     border: 2px dashed transparent;
     display: inline-block; min-width: 50px; min-height: 50px; position: fixed;
 }
 
-body > .frame:hover {
+#hud-enhanced > .frame:hover {
     border: 2px dashed rgba(0, 0, 0, 0.8);
     background: rgba(0, 0, 0, 0.1);
     cursor: grab;
 }
+#hud-enhanced > .frame:active   { cursor: grabbing; }
+#hud-enhanced.debug > .frame {
+    border: 2px dashed rgba(219, 24, 24, 0.8);
+    background: rgba(209, 18, 18, 0.1);
+    cursor: grab;
+}
+#hud-enhanced > .frame > .data-name {
+    display: None;
+    position: absolute;
+    right: 0;
+    padding-right: 3px;
+}
+#hud-enhanced > .frame:hover > .data-name { display: block; }
+#hud-enhanced.debug > .frame > .data-name {
+    display: block;
+    color: rgb(219, 24, 24);
+}
 
-body > .frame:active   {
-    cursor: grabbing;
+#hud-enhanced > .frame > .dataxy {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+#hud-enhanced > .frame:hover > .dataxy { display: block; }
+#hud-enhanced.debug > .frame > .dataxy {
+    display: block;
+    color: rgb(219, 24, 24)!important;
 }

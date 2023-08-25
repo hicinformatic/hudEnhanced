@@ -27,7 +27,6 @@ var cfg_stats = {
 //"nitro:blue",
 
 var getRGBA = function(colors, a=1) {
-    console.log("rgba("+colors.r+", "+colors.g+", "+colors.b+", "+a+")");
     return "rgba("+colors.r+", "+colors.g+", "+colors.b+", "+a+")";
 }
 
